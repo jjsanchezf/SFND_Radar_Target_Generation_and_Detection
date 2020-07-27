@@ -69,7 +69,7 @@ plot(sig_fft); grid minor     % plot FFT output
 axis ([0 200 0 1]);
 xlabel('measured range');
 ```
-![result](images/range_FFT.png)
+![result](Images/range_FFT.png)
 
 #### 4. doppler FFT (2st FFT)
 
@@ -87,7 +87,7 @@ doppler_axis = linspace(-100,100,Nd);
 range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
 figure('Name','Range Doppler Map'),surf(doppler_axis,range_axis,RDM);
 ```
-![result](images/2D_FFT.png)
+![result](Images/2D_FFT.png)
 
 #### 5. 2D CFAR
 Implement the 2D CFAR process on the output of 2D FFT operation, i.e the Range Doppler Map.
@@ -164,4 +164,4 @@ end
 Training, Guard cells and offset are selected by increasing and decreasing to match the image shared in walkthrough.
 
 
-![result](images/CA_CFAR.png)
+![result](Images/CA_CFAR.png)
